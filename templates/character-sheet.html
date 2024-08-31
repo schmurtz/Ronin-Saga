@@ -1,0 +1,86 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <nav class="sheet-tabs tabs" data-group="primary">
+      <a class="item" data-tab="recto">{{localize "sheet.front"}}</a>
+      <a class="item" data-tab="verso">{{localize "sheet.back"}}</a>
+    </nav>
+  </header>
+  <section class="sheet-body">
+    <!-- recto -->
+    <div class="tab recto" data-group="primary" data-tab="recto">
+      <div class="image" style="height: 190px;">
+        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="128px" width="128px"/>
+      </div>
+      <div class="" style="height: 70px;">
+        <input class="name" name="name" type="text" value="{{actor.name}}"/>
+        <input class="ancestry" name="system.ancestry" type="text" value="{{actor.system.ancestry}}"/>
+      </div>
+      <div class="" style="height: 630px;display: flex;">
+          <div class="" style="width: 302px;display= block;">
+            <div class="" style="height: 72px; display: flex;">
+              <a title="blade" class="combatbutton roll-stat" style="position: relative;top: 38px;left: 40px;" data-stat="blade"></a>
+              <a title="bow" class="combatbutton roll-stat" style="position: relative;top: 38px;left: 57px;" data-stat="bow"></a>
+              <a title="sorcery" class="combatbutton roll-stat" style="position: relative;top: 38px;left: 77px;" data-stat="sorcery"></a>
+            </div>
+
+            <input class="combatability" style="position: relative;top: 8px; left: 45px;" name="system.blade" type="number" value="{{actor.system.blade}}"/>
+            <input class="combatability" style="position: relative;top: 8px; left: 63px;" name="system.bow" type="number" value="{{actor.system.bow}}"/>
+            <input class="combatability" style="position: relative;top: 8px; left: 84px;" name="system.sorcery" type="number" value="{{actor.system.sorcery}}"/>
+            <div class="combatabilitiescontainer" style="position: relative;top: 18px; left: 8px;">
+              <textarea class="" name="system.combatabilities" rows="10">{{actor.system.combatabilities}}</textarea>
+            </div>
+            <div class="spells" style="position: relative;top: 32px; left: 8px;">
+              <textarea class="" name="system.spells" rows="5">{{actor.system.spells}}</textarea>
+            </div>
+          </div>
+          <div class="" style="width: 205px;">
+            <a title="agility" class="caracbutton roll-stat" style="position: relative;top: 10px;" data-stat="agility"></a>
+            <input class="ability" style="position: relative;top: 31px; left: 61px;" name="system.agility" type="number" value="{{actor.system.agility}}"/>
+            <a title="brawn" class="caracbutton roll-stat" style="position: relative;top: 58px;" data-stat="brawn"></a>
+            <input class="ability" style="position: relative;top: 73px; left: 61px;" name="system.brawn" type="number" value="{{actor.system.brawn}}"/>
+            <a title="wits" class="caracbutton roll-stat" style="position: relative;top: 101px;" data-stat="wits"></a>
+            <input class="ability" style="position: relative;top: 117px; left: 61px;" name="system.wits" type="number" value="{{actor.system.wits}}"/>
+          </div>
+          <div class="" style="width: 306px;">
+            <div class="gifts" style="position: relative;top: 26px; left: 9px;">
+              <textarea class="" name="system.gifts" rows="20">{{actor.system.gifts}}</textarea>
+            </div>
+          </div>
+      </div>
+      <div class="" style="height: 188px;display:flex;">
+        <div class="equipement">
+          <textarea class="" name="system.equipement" rows="5">{{actor.system.equipement}}</textarea>
+        </div>
+        <div class="focus">
+          <input class="ability" style="position: relative;top: 83px; left: 29px;" name="system.focus" type="number" value="{{actor.system.focus}}"/>
+        </div>
+      </div>
+      <div class="" style="display:flex;height: 135px;">
+        <div class="" style="width: 334px;">
+          <div class="weapons" style="position: relative;top: 22px; left: 18px;">
+            <textarea class="" name="system.weapons" rows="3">{{actor.system.weapons}}</textarea>
+          </div>
+        </div>
+        <div class="" style="width: 137px;">
+          <input class="hitpoints" style="position: relative;top: 56px; left: 5px;" name="system.hitpoints.current" type="number" value="{{actor.system.hitpoints.current}}"/>
+          <input class="hitpoints" style="position: relative;top: 56px; left: 4px;" name="system.hitpoints.max" type="number" value="{{actor.system.hitpoints.max}}"/>
+        </div>
+        <div class="" style="width: 340px;">
+          <div class="armor" style="position: relative;top: 22px; left: 18px;">
+            <textarea class="" name="system.armor" rows="3">{{actor.system.armor}}</textarea>
+          </div>
+        </div>
+      </div>
+      <div class="" style="display: block;text-align: center;height: 30px;">
+        <a title="healing" class="healingbutton roll-healing"></a>
+      </div>
+    </div>
+    <!-- verso -->
+    <div class="tab verso" data-group="primary" data-tab="verso">
+      <div class="notesLabel">{{localize "sheet.notes"}}</div>
+      <div class="notes">
+        {{editor actor.system.notes target="system.notes" engine="prosemirror" button=true owner=owner editable=editable}}
+      </div>
+    </div>
+  </section>
+</form>

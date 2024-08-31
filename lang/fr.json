@@ -1,0 +1,45 @@
+{
+  "sheet":{
+    "front":"Recto",
+    "back":"Verso",
+    "notes":"Notes",
+    "ability":{
+      "agility":"Agilité",
+      "brawn":"Robustesse",
+      "wits":"Esprit",
+      "blade":"Epée",
+      "bow":"Arc",
+      "sorcery":"Sorcellerie"
+    },
+    "healing":"Guérison"
+  },
+  "creature":{
+    "hp":"PV",
+    "morale":"Morale",
+    "armor":"Armure",
+    "weapon":"Arme",
+    "description":"Description"
+  },
+  "duelcard":{
+    "charge":"Charge",
+    "feint":"Feinte",
+    "guard":"Garde",
+    "title":"Carte Duel:",
+    "button.reveal":"Révéler la carte"
+  },
+  "dialog":{
+    "duel":{
+      "dialogtitle":"Duel",
+      "contenttitle":"Choisir une carte de duel:"
+    },
+    "button":{
+      "validate":"Valider"
+    }
+  },
+  "chat":{
+    "sugoi":"Sugoi!",
+    "baka":"Baka!",
+    "winfocus":"Gain d'1 point de focus.",
+    "losefocus":"Perte d'1 point de focus."
+  }
+}

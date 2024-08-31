@@ -1,0 +1,45 @@
+{
+  "sheet":{
+    "front":"Front",
+    "back":"Verso",
+    "notes":"Notes",
+    "ability":{
+      "agility":"Agility",
+      "brawn":"Brawn",
+      "wits":"Wits",
+      "blade":"Blade",
+      "bow":"Bow",
+      "sorcery":"Sorcery"
+    },
+    "healing":"Healing"
+  },
+  "creature":{
+    "hp":"HP",
+    "morale":"Morale",
+    "armor":"Armure",
+    "weapon":"Weapon",
+    "description":"Description"
+  },
+  "duelcard":{
+    "charge":"Charge",
+    "feint":"Feint",
+    "guard":"Gard",
+    "title":"Duel Card:",
+    "button.reveal":"Reveal Card"
+  },
+  "dialog":{
+    "duel":{
+      "dialogtitle":"Duel",
+      "contenttitle":"Choose a duel:"
+    },
+    "button":{
+      "validate":"Validate"
+    }
+  },
+  "chat":{
+    "sugoi":"Sugoi!",
+    "baka":"Baka!",
+    "winfocus":"Gain 1 focus point.",
+    "losefocus":"Loss 1 focus point."
+  }
+}

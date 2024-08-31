@@ -1,0 +1,34 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header>
+    <div class="headercontainer">
+      <div class="image">
+        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="128px" width="128px"/>
+      </div>
+      <div class="details">
+        <input class="name" name="name" type="text" value="{{actor.name}}"/>
+        <div class="hp">
+          <label class="title">{{localize "creature.hp"}} <input class="stat" name="system.hitpoints.current" type="number" value="{{actor.system.hitpoints.current}}"/> / <input class="stat" name="system.hitpoints.max" type="number" value="{{actor.system.hitpoints.max}}"/></label>
+        </div>
+        <div class="morale">
+          <label class="title"><a title="rollmorale" class="rollmorale">{{localize "creature.morale"}}</a> <input class="stat" name="system.morale" type="number" value="{{actor.system.morale}}"/></label>
+        </div>
+        <div class="armor">
+          <span class="title">{{localize "creature.armor"}}</span><br/>
+          <input class="type" name="system.armor.type" type="text" value="{{actor.system.armor.type}}"/>
+          <input class="stat" name="system.armor.value" type="number" value="{{actor.system.armor.value}}"/>
+        </div>
+        <div class="weapon">
+          <span class="title"><a title="rollweapon" class="rollweapon">{{localize "creature.weapon"}}</a></span><br/>
+          <input class="type" name="system.weapon.type" type="text" value="{{actor.system.weapon.type}}"/>
+          <input class="stat" name="system.weapon.value" type="text" value="{{actor.system.weapon.value}}"/>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="">
+    <div class="title">{{localize "creature.description"}}</div>
+    <div class="description">
+      {{editor actor.system.description target="system.description" engine="prosemirror" button=true owner=owner editable=editable}}
+    </div>
+  </div>
+</form>

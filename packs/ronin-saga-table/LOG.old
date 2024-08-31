@@ -1,0 +1,7 @@
+2024/08/28-08:55:05.597 32dc Recovering log #30
+2024/08/28-08:55:05.602 32dc Delete type=0 #30
+2024/08/28-08:55:05.602 32dc Delete type=3 #28
+2024/08/28-09:05:33.809 46a4 Level-0 table #35: started
+2024/08/28-09:05:33.809 46a4 Level-0 table #35: 0 bytes OK
+2024/08/28-09:05:33.811 46a4 Delete type=0 #33
+2024/08/28-09:05:33.815 46a4 Manual compaction at level-0 from '!tables!MGIBkjKfrFRfjtCm' @ 72057594037927935 : 1 .. '!tables.results!u2WpLLCaCzm31TSE.yr8atHUmAiUV0p5W' @ 0 : 0; will stop at (end)

@@ -1,0 +1,371 @@
+@font-face {
+  font-family: "Japestyle Plain";
+  src: url('../fonts/Japestyle-Plain.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.system-ronin-saga {
+  background-image: url("../assets/ronin-saga.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: auto 100vh;
+  background-color: black;
+  --color-shadow-primary:black;
+}
+
+.system-ronin-saga #pause {
+  background: url();
+}
+.system-ronin-saga #pause img {
+  content: url("../assets/pause.png");
+}
+
+/********/
+/* CHAT */
+/********/
+
+.system-ronin-saga #chat-form textarea{
+  background: url(../assets/chat-bg.jpg) repeat;
+}
+
+.system-ronin-saga .chat-message {
+  background: url(../assets/chat-bg.jpg) repeat;
+}
+
+.system-ronin-saga .chat-message.whisper {
+  background-color: rgba(0,60,200,0.2);
+  background-blend-mode: multiply;
+}
+
+.system-ronin-saga .chat-message.blind {
+  background-color: rgba(200,100,0,0.3);
+  background-blend-mode: multiply;
+}
+
+#chat-controls .roll-type-select{
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.system-ronin-saga .chat-message .critical{
+  font-family: Japestyle Plain;
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: -3px;
+}
+
+.system-ronin-saga .chat-message .focusinfo{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/*************/
+/* CHARACTER */
+/*************/
+
+.character .window-content{
+  padding: 0px;
+  margin:0px;
+}
+
+.character .sheet-header{
+  position: fixed;
+  z-index: 999;
+  font-family: Japestyle Plain;
+  font-size: 24px;
+  height: 26px;
+}
+
+.character .sheet-header .sheet-tabs .item{
+  padding-bottom: 8px;
+  padding-top: 0px;
+  background: #FFFB;
+}
+
+.character form div{
+  margin: 0px;
+  padding: 0px;
+}
+
+.character input{
+  border-style: none;
+  background: none;
+  padding-bottom: 8px;
+}
+
+.character textarea{
+  border-style: none;
+  background: none;
+  resize: none;
+  font-family: Japestyle Plain;
+  font-size: 24px;
+  line-height: 1.2em;
+}
+
+.character .sheet-body .recto{
+  background-image: url("../assets/fiche-perso.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 825px 1275px; /*full image size*/
+  width: 825px;
+  height:1275px;
+  font-family: Japestyle Plain;
+  font-size: 24px;
+}
+
+.character .sheet-body .verso{
+  background-image: url("../assets/fiche-perso-verso.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 825px 1275px; /*full image size*/
+  width: 825px;
+  height:800px;
+}
+
+.character .sheet-body .image img {
+  position: relative;
+  left: 47px;
+  top: 61px;
+}
+
+.character .sheet-body input.name {
+  position: relative;
+  left: 132px;
+  top: 3px;
+  width: 230px;
+}
+
+.character .sheet-body input.ancestry {
+  position: relative;
+  left: 391px;
+  top: 3px;
+  width: 180px;
+}
+
+.character .sheet-body input.ability{
+  display: block;
+  font-size: 60px;
+  text-align: center;
+  width:80px;
+  height: 80px;
+  box-shadow: none;
+}
+
+.character .sheet-body input.combatability{
+  font-size: 32px;
+  text-align: center;
+  width:50px;
+  height: 40px;
+  box-shadow: none;
+}
+
+.character .sheet-body div.combatabilitiescontainer{
+  width: 294px;
+  height: 323px;
+}
+
+.character .sheet-body div.spells{
+  width: 294px;
+  height: 160px;
+}
+
+.character .sheet-body div.gifts{
+  width: 294px;
+  height: 602px;
+}
+
+.character .sheet-body div.equipement{
+  width: 623px;
+  height: 164px;
+  margin-top: 23px;
+  margin-left: 10px;
+}
+
+.character .sheet-body div.focus{
+  width: 137px;
+}
+
+.character .sheet-body div.weapons{
+  width: 310px;
+  height: 112px;
+}
+
+.character .sheet-body div.armor{
+  width: 318px;
+  height: 112px;
+}
+
+.character .sheet-body input.hitpoints{
+  font-size: 32px;
+  text-align: center;
+  width:60px;
+  height: 40px;
+  box-shadow: none;
+}
+
+.character .sheet-body a.caracbutton{
+  display: block;
+  height: 70px;
+}
+
+.character .sheet-body a.combatbutton{
+  display:flex;
+  height: 30px;
+  width: 60px;
+}
+
+.character .sheet-body a.healingbutton{
+  display: block;
+  width: 300px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.character .sheet-body .verso .notes{
+  width: 825px;
+  height:760px;
+  padding-top: 8px;
+}
+
+.character .sheet-body .verso .notesLabel{
+  font-family: Japestyle Plain;
+  font-size: 32px;
+  line-height: 1.2em;
+  width: 100%;
+  text-align: center;
+}
+
+.character .sheet-body .verso .notes .editor{
+  height:100%;
+  width:100%;
+  font-size: 18px;
+  line-height: 1.2em;
+}
+
+.character .sheet-body .verso .notes .editor-content{
+  padding: 10px 30px;
+}
+
+/************/
+/* CREATURE */
+/************/
+
+.creature .title{
+  font-weight: bold;
+}
+
+.creature .headercontainer{
+  display:flex;
+  flex-direction: row;
+}
+
+.creature .window-content {
+  background: url(../assets/chat-bg.jpg) repeat;
+}
+
+.creature .headercontainer .image{
+  display: flex;
+  align-items: center;
+  width:128px;
+}
+
+.creature .headercontainer .details{
+  width: 235px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.creature .headercontainer .details div{
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.creature .headercontainer .details .name{
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.creature .headercontainer .details .stat{
+  width:30px;
+  text-align: center;
+}
+
+.creature .headercontainer .details .type{
+  width:150px;
+}
+
+.creature .headercontainer .details .weapon .stat{
+  width: 50px;
+}
+
+.creature .descriptionLabel{
+  margin-top: 4px
+}
+
+.creature .description .editor{
+  height:140px;
+}
+
+/*************/
+/* DUEL CARD */
+/*************/
+
+.system-ronin-saga .form-duel-card .content{
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.system-ronin-saga .form-duel-card .card-choice-container{
+  display: inline-block;
+  text-align: center;
+}
+
+.system-ronin-saga .duelcard{
+  font-family: Japestyle Plain;
+  font-size: 18px;
+  position: relative;
+  text-align: center;
+  color: #FFFB;
+}
+
+.system-ronin-saga .duelcard .charge{
+  position: absolute;
+  top: 10px;
+  left: 22px;
+}
+
+.system-ronin-saga .duelcard .feint{
+  position: absolute;
+  top: 128px;
+  right: 14px;
+}
+
+.system-ronin-saga .duelcard .guard{
+  position: absolute;
+  bottom: 44px;
+  left: 22px;
+}
+
+
+.system-ronin-saga .form-duel-card input[type="radio"] {
+  margin: 0px;
+}
+
+.system-ronin-saga .chat-message .chatcombatcard .duelcard{
+  display: block;
+  width: 169px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.system-ronin-saga .chat-message .chatcombatcard .cardback{
+  display: block;
+}
+
+.system-ronin-saga .chat-message .chatcombatcard .cardfront{
+  display: none;
+}

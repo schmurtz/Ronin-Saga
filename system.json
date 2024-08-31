@@ -1,0 +1,92 @@
+{
+  "id":"ronin-saga",
+  "title":"Ronin Saga",
+  "description":"Unofficial simple system for Ronin Saga. Images are used with Kobayashi's consent. If this system is useful to you, you can pay me a coffe (or an RPG book ^^) for my work on https://paypal.me/leschmurtz",
+  "version": "0.0.3",
+  "authors": [
+    {
+      "name" : "Schmurtz",
+      "email": "schmurtz-npc@gmx.fr",
+      "flags": {}
+    }
+  ],
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "esmodules":[
+    "module/ronin.js"
+  ],
+  "styles": [
+    "styles/ronin.css"
+  ],
+  "scripts":[
+    "module/ronin-macro.js"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang":"fr",
+      "name":"Francais",
+      "path":"lang/fr.json"
+    }
+  ],
+  "packs": [
+    {
+      "label": "Ronin Saga Macro",
+      "type": "Macro",
+      "name": "ronin-saga-macro",
+      "path": "packs/ronin-saga-macro",
+      "system": "ronin-saga",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {},
+      "package": "system",
+      "id": "system.ronin-saga-macro",
+      "packageType": "system",
+      "packageName": "ronin-saga",
+      "index": [],
+      "folders": []
+    },
+    {
+      "label": "Ronin Saga Table",
+      "type": "RollTable",
+      "name": "ronin-saga-table",
+      "path": "packs/ronin-saga-table",
+      "system": "ronin-saga",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {},
+      "package": "system",
+      "id": "system.ronin-saga-table",
+      "packageType": "system",
+      "packageName": "ronin-saga",
+      "index": [],
+      "folders": []
+    }
+  ],
+  "media": [
+    {
+      "type": "setup",
+      "url": "systems/ronin-saga/assets/ronin-saga-splash.jpg",
+      "thumbnail": "systems/ronin-saga/assets/ronin-saga-splash.jpg"
+    }
+  ],
+  "grid":{
+    "distance": 1.5,
+    "units": "m"
+  },
+  "background": "systems/ronin-saga/assets/ronin-saga-splash.jpg",
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "readme": ""
+}

@@ -1,0 +1,32 @@
+<form class="form-duel-card">
+  <h3>{{localize "dialog.duel.contenttitle"}}</h3>
+  <div class="content" style="display:flex">
+    <div class="card-choice-container">
+      <label for="choicecharge">
+        <div class="duelcard">
+          <img src="systems/ronin-saga/assets/card-charge.jpg" />
+          <div class="charge">{{localize "duelcard.charge"}}</div>
+        </div>
+      </label>
+      <input type="radio" id="choicecharge" name="duelcard" value="charge" checked="checked" />
+    </div>
+    <div class="card-choice-container">
+      <label for="choicefeint">
+        <div class="duelcard">
+          <img src="systems/ronin-saga/assets/card-feint.jpg" />
+          <div class="feint">{{localize "duelcard.feint"}}</div>
+        </div>
+      </label>
+      <input type="radio" id="choicefeint" name="duelcard" value="feint" />
+    </div>
+    <div class="card-choice-container">
+      <label for="choiceguard">
+        <img src="systems/ronin-saga/assets/card-guard.jpg" />
+        <div class="duelcard">
+          <div class="guard">{{localize "duelcard.guard"}}</div>
+        </div>
+      </label>
+      <input type="radio" id="choiceguard" name="duelcard" value="guard" />
+    </div>
+  </div>
+</form>

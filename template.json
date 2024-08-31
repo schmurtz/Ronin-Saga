@@ -1,0 +1,46 @@
+{
+  "Actor":{
+    "types":["character", "creature"],
+    "templates":{
+      "hp":{
+        "hitpoints":{
+          "current":0,
+          "max":0
+        }
+      }
+    },
+    "character":{
+      "templates":["hp"],
+      "ancestry":"",
+      "agility":0,
+      "brawn":0,
+      "wits":0,
+      "blade":0,
+      "bow":0,
+      "sorcery":0,
+      "combatabilities":"",
+      "gifts":"",
+      "spells":"",
+      "equipement":"",
+      "weapons":"",
+      "armor":"",
+      "focus":2,
+      "notes":""
+    },
+    "creature":{
+      "templates":["hp"],
+      "description":"",
+      "morale":0,
+      "armor":{
+        "type":"",
+        "value":0
+      },
+      "weapon":{
+        "type":"",
+        "value":"d4"
+      }
+    }
+  },
+  "Items":{
+  }
+}
