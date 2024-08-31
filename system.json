@@ -85,8 +85,9 @@
     "units": "m"
   },
   "background": "systems/ronin-saga/assets/ronin-saga-splash.jpg",
-  "url": "",
-  "manifest": "",
-  "download": "",
-  "readme": ""
+  "url": "https://github.com/schmurtz/ronin-saga",
+  "manifest": "https://raw.githubusercontent.com/schmurtz/ronin-saga/main/system.json",
+  "download": "https://github.com/schmurtz/ronin-saga/archive/refs/heads/main.zip",
+  "readme": "https://raw.githubusercontent.com/schmurtz/ronin-saga/main/README.md",
+  "license":"https://raw.githubusercontent.com/schmurtz/ronin-saga/main/LICENSE"
 }
